@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Webstreamer</title>
+    </head>
+    <body>
+        <input name="password" id="password">
+        <button onclick="check_password()">Connect</button>
+        <script>
+            function check_password() {
+                var password = document.getElementById("password").value;
+                if (password == "secret password") {
+                    alert("connecting")
+                    window.location.href = "display.html"
+                } else {
+                    alert("WRONG BOZO")
+                }
+            }
+        </script>
+    </body>
+</html>
